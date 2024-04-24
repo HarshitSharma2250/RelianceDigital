@@ -1,0 +1,21 @@
+
+.ToppSingleImage{
+    width: 100%;
+}
+.ToppSingleImage img{
+    width: 100%;
+}
+.alldata{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 0;
+}
+.alldata button{
+    padding: 7px 15px;
+    font-size: large;
+    border-radius: 20px;
+  background-color: rgb(10, 10, 158);
+  color: #fff;
+  cursor: pointer;
+}

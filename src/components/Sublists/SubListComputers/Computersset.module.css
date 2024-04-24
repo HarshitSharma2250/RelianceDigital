@@ -1,0 +1,67 @@
+
+.container{
+    background-image: url("https://media.istockphoto.com/id/1087732912/photo/open-laptop-with-glowing-light-on-dark-background.jpg?s=1024x1024&w=is&k=20&c=wKKMnjamwmQ2atvKrL18Xif3nQSbz3T3JzycoxJ8ZDE=");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    padding:1rem 2rem;
+}
+.container a{
+color: #fff;
+}
+.container li{
+    margin-top: 10px;
+    font-weight: 200;
+}
+.directhead{
+    font-weight:700;
+}
+.container >ul{
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

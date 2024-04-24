@@ -1,0 +1,49 @@
+.continer{
+    background-color: #fff;
+    padding: 1rem ;
+    margin: 5px 0;
+    height: auto;
+}
+.continer h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.applyflex{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 2rem;
+    gap: 20px;
+}
+
+.commonbox{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    text-align: center;
+    padding: 1rem 0;
+    cursor: pointer;
+width: 24%;
+min-width: 200px;
+}
+.commonbox img+p{
+    font-weight: 700;
+}
+@media screen  and (max-width:1050px) {
+    .MainList{
+        position: relative;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+    }
+}
+@media screen  and (max-width:940px) {
+    .continer h2{
+        font-size: 80%;
+    }
+    .commonbox img{
+        width: 20%;
+    }
+    .commonbox p{
+        font-size: 70%;
+    }
+}

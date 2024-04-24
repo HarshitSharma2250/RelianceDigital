@@ -1,0 +1,10 @@
+.imgSlider{
+    width: 100%;
+}
+.imgSlider img{
+    width: 100%;
+}
+.topimgcarocial{
+    z-index: 1;
+    position: relative;
+}

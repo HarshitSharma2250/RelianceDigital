@@ -1,0 +1,49 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.headingitem{
+    display: flex;
+    padding: .5rem 20px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+}
+.checkeditem:checked~.headingitem>.iconrotate {
+    transform: rotate(180deg);
+}
+
+.sublistitems a ,.helpitem a {
+    color: black;
+}
+.sublistitems{
+    height: 0px;
+    transition: all .25s;
+    overflow: hidden;
+    text-align: start;
+background-color: #fff;
+padding-left: 3rem;
+}
+.checkeditem:checked~.sublistitems{
+    height: auto;
+}
+.checkeditem{
+    display: none;
+}
+.accordion_tab .categories{
+    background-color: #e2e2e2af;
+    padding: .5rem 0;
+    padding-left: 20px;
+        }
+        .sublistitems .directchildlist{
+font-weight: 700;
+margin-top: 10px ;
+display: block;
+        }
+        .subchildul>li{
+            padding-left: 10px;
+            margin-top: 10px;  
+        }

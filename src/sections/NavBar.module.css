@@ -1,0 +1,107 @@
+*{
+text-decoration: none;
+margin: 0;
+padding: 0;
+}
+.NavBar{
+    padding: 1.4rem 25px 1.4rem 40px;
+    background-color: #e42529;
+}
+.NavBar a{
+    color: #fff;
+}
+.HeaderUpper{
+    display: flex;
+    justify-content: end; 
+    
+}
+
+.HeaderUpper a:nth-child(2){
+    margin: 0 10px;
+}
+.cart_login_link{
+    display: flex;
+    align-items: center;
+}
+.loweheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart_login_link a:nth-child(2){
+    margin: 0px 15px;
+}
+
+ /* when toogle bar will open------------ */
+
+.firstsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.naviconContainer{
+    display: none;
+}
+.minifirstdev{
+    display: flex;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.check{
+    display: none;
+}
+ .NavBarlist .allcontentNavBar{
+    position: fixed;
+    width:20rem;
+    height:auto;
+    background-color: #e2e2e2;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+    float: right;
+  margin-right: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  z-index: 1000;
+  }
+  .NavBarlist .allcontentNavBar>li{
+    display: block;
+    line-height: 40px;
+    margin: 0 5px;
+    
+  }
+  .NavBarlist .allcontentNavBar>li a{
+    font-size:13px;
+    letter-spacing: 1.1px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  .check:checked ~ .allcontentNavBar{
+    left: 0;
+  }
+
+@media screen and (max-width:1000px) {
+    .HeaderUpper{
+        display: none;
+    }
+}
+@media screen and (max-width:980px) {
+    .naviconContainer{
+        display: block;
+    }
+    .loweheader{
+        display: none;
+    }
+    .loginlink{
+        background-color: #e42529;
+        padding: 1rem 0;
+        padding-left: 20px;
+    }
+}

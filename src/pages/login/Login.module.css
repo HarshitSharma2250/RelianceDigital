@@ -1,0 +1,70 @@
+*{
+    text-transform: capitalize;
+}
+.loginform{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.loginform .loginimg{
+    width: 70%;
+}
+.loginimg img{
+    width: 100%;
+}
+.loginform form{
+    height: 45vh;
+    width: 20%;
+    min-width: 300px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.loginform form h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.loginform input{
+    width: 96%;
+    height: 50px;
+    font-size: larger;
+}
+.loginform label{
+    font-size: larger;
+    margin-bottom: 10px;
+    display: block;
+}
+.loginform .submitform{
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff 50%, #e42529 50%);
+    transition: background .5s ease-out;
+    background-size: 100% 200%;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.loginform .submitform:hover{
+    background-position: 0% 100%;
+    color: #fff;
+}
+
+@media screen and (max-width:1253px) {
+    .loginform .loginimg{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    .loginform .loginimg{
+        width: 100%;
+    }
+    .loginform{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .loginform form{
+        height: 45vh;
+        width: 90%;
+        margin: auto;
+    }
+}

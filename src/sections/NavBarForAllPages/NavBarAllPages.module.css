@@ -1,0 +1,53 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    }
+
+.NavBarAllPages{
+ 
+    background-color: #e42529;
+}
+.NavBarAllPages a{
+    color: #fff;  
+}
+
+.eachLinkitem {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    width: calc(100% / 7); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+    max-width: 150px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    color: #fff;
+  text-transform: uppercase;
+  }
+  
+
+  th a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px; 
+    text-transform: uppercase;
+  }
+  .loweheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+  }
+  .loweheader span{
+    margin: 0 10px;
+    color: #fff;
+  }
+  .cart_login_link a{
+font-size: large;
+font-weight: 700;
+  }

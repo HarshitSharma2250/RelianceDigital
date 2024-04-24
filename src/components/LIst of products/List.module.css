@@ -1,0 +1,53 @@
+.MainList{
+    display: flex;
+    justify-content: space-evenly;
+    background: #003380;
+    color: #fff;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+
+.renderListItemsBlock{
+height: 3rem;
+}
+.rendericons{
+    margin-left: 7px;
+}
+.eachRenderitem{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}
+.eachRenderitem:hover{
+    background-color: red;
+  
+}
+
+.componentRender{
+    display: none;
+}
+.renderListItemsBlock:hover .componentRender{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 60vh;
+    z-index: 100;
+    left: 2%;
+    top: 22.4%;
+    transition: .5s ease-in-out;
+}
+@media screen  and(max-width:1380px) {
+    .MainList{
+        position: relative;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width:980px) {
+    .MainList{
+        display: none;
+    }
+}

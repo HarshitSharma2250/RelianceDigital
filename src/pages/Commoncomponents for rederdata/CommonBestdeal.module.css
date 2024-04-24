@@ -1,0 +1,229 @@
+.container{
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    width: 96%;
+}
+.leftSideItems{
+    width: 20%;
+    margin-right: 30px;
+    min-width: 250px;
+}
+.brands_name{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.leftcontainerCategorystyle{
+    background-color: #fff;
+    margin-top: 1rem;
+    height: auto;
+    padding: 1rem 1rem .1rem 1rem;
+}
+.brands_name_ckeckbox{
+    display: flex;
+}
+.brands_name_ckeckbox input{
+    margin-right: 1rem;
+   width: 25px;
+   height: 25px;
+}
+.brands_name_ckeckbox p{
+    font-size: 20px;
+}
+.eachrenderItems{
+    margin-bottom: 30px;
+}
+.rightSideItems{
+    width:78%;
+}
+.rightContinercontent{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightContinercontent .filteration{
+    display: flex;
+}
+.filteration span{
+    margin-right: 20px;
+}
+.filteration button{
+    padding: 4px 8px;
+}
+.filteration button:first-child{
+    margin-right: 20px;
+}
+.renderrightContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.rightcontainerEachitems{
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.rightcontainerEachitems img{
+    width: 80%;
+    height: 280px;
+    margin: auto;
+    display: block;
+}
+.rightcontainerEachitems img:hover{
+    transform: scale(1.07);
+    transition: .5s ease;
+}
+.rightcontainerEachitems img+div{
+margin-top: 10px;
+font-size: large;
+}
+.rightcontainerEachitems img+div p:first-child{
+    font-weight: 700;
+    color: #323e81;
+}
+.rightcontainerEachitems img+div p:nth-child(2){
+    margin: 10px 0;
+}
+.rightcontainerEachitems img+div p:last-child{
+    color: #323e81;
+}
+.container .buttons{
+padding: 1.6rem 0;
+padding-left: 1rem;
+    margin: .5rem 0 3rem 0rem;
+    background-color: #fff;
+}
+.buttons button{
+    padding: 4px 10px;
+    font-size: large;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff 50%, #e42529 50%);
+    transition: background .5s ease-out;
+    background-size: 100% 200%;
+    color: black;
+}
+.buttons button:hover{
+    background-position: 0% 100%;
+    color: #fff;
+}
+.buttons button:first-child{
+    margin-right: 2rem;
+}
+.filtersbuttons{
+    display: none;
+}
+.hidefilter{
+    display: none;
+}
+@media screen and (max-width:1150px) {
+    .renderrightContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:900px) {
+    .renderrightContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .rightContinercontent{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 1rem 1rem;
+    }
+    .leftSideItems{
+        margin-right: 20px;
+        min-width: 150px;
+    }
+    .brands_name_ckeckbox input{
+       width: 20px;
+       height: 20px;
+    }
+    .brands_name_ckeckbox p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:633px) {
+.filtersbuttons{
+    display: flex;
+    position: fixed;
+    top: 95.3vh;
+    width: 98%;
+    right: 0%;
+    left: 1%;
+    z-index: 1200;
+}
+.filterbtnleft{
+   width: 50%;
+padding: .5rem 0;
+cursor: pointer;
+}
+.filterbtnright{
+    width: 50%;
+    right: 0%;
+    background-color: #e42529;
+    color: #fff;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+.filteration{
+    position:fixed;
+   display: flex;
+   flex-direction: column;
+    background-color: rgb(214, 214, 214);
+    width: 90%;
+  padding:.5rem 2rem;
+  top: 76vh;
+  left: 0;
+  z-index: 1200;
+}
+.filteration>span{
+    display: flex;
+    justify-content: space-between;
+}
+.filteration section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.filteration section button{
+    width:20%;
+margin: 10px 0;
+font-size: 70%;
+}
+.hidefilter{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.leftSideItems{
+    position: fixed;
+    width: 100%;
+    margin-right: 30px;
+    min-width: 250px;
+    left:0;
+  z-index: 1000;
+  height: 300px;
+  overflow-y: auto;
+}
+.leftcontainerCategorystyle{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+}
+.leftcontainerCategorystyle{
+    margin-top: 0;
+}
+.rightSideItems{
+    width:100%;
+}
+}

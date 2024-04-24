@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    width: 96%;
+}
+.leftSideItems{
+    width: 30%;
+    margin-right: 30px;
+    min-width: 400px;
+}
+.brands_name{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.leftcontainerCategorystyle{
+    background-color: #fff;
+    margin-top: 1rem;
+    height: auto;
+    padding: 1rem 1rem .1rem 1rem;
+    display: flex;
+}
+.brands_name_ckeckbox{
+    display: flex;
+    cursor: pointer;
+}
+.brands_name_ckeckbox input{
+    margin-right: 1rem;
+   width: 25px;
+   height: 25px;
+}
+.brands_name_ckeckbox p{
+    font-size: 20px;
+}
+.eachrenderItems{
+    margin-bottom: 10px;
+    
+}
+.rightSideItems{
+    width:78%;
+}
+.rightContinercontent{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightContinercontent .filteration{
+    display: flex;
+}
+.filteration span{
+    margin-right: 20px;
+}
+.filteration button{
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.filteration button:first-child{
+    margin-right: 20px;
+}
+.renderrightContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.rightcontainerEachitems{
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.rightcontainerEachitems img{
+    width: 80%;
+    height: 280px;
+    margin: auto;
+    display: block;
+}
+.rightcontainerEachitems img:hover{
+    transform: scale(1.07);
+    transition: .5s ease;
+}
+.rightcontainerEachitems img+div{
+margin-top: 10px;
+font-size: large;
+}
+.rightcontainerEachitems img+div p:first-child{
+    font-weight: 700;
+    color: #323e81;
+}
+.rightcontainerEachitems img+div p:nth-child(2){
+    margin: 10px 0;
+}
+.rightcontainerEachitems img+div p:last-child{
+    color: #323e81;
+}
+.container .buttons{
+padding: 1.6rem 0;
+padding-left: 1rem;
+    margin: .5rem 0 3rem 0rem;
+    background-color: #fff;
+}
+.buttons button{
+    padding: 4px 10px;
+    font-size: large;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff 50%, #e42529 50%);
+    transition: background .5s ease-out;
+    background-size: 100% 200%;
+    color: black;
+}
+.buttons button:hover{
+    background-position: 0% 100%;
+    color: #fff;
+}
+.buttons button:first-child{
+    margin-right: 2rem;
+}
+section h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fff;
+    padding:2rem 0;
+}
+.container .content{
+    margin: 0 0 1rem 1rem;
+    font-size: larger;
+    font-weight: 700;
+}
+.container .eachitemcontainer{
+    width: 96%;
+    margin: auto;
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+
+}
+.container .eachitemcontainer a img{
+    width: 100%;
+
+}
+.container .eachitemcontainer a img:hover{
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+@media screen and (max-width:1050px){
+    .container .eachitemcontainer{
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media screen and (max-width:800px){
+    .container .eachitemcontainer{
+    grid-template-columns: repeat(2,1fr);
+}
+.container .content{
+    font-size: medium;
+}
+}

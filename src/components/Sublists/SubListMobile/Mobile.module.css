@@ -1,0 +1,26 @@
+.Mobiles{
+    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQD6EfmATGoBfgtinqi4VP4lfdX6J1H_xAWklD72iVMxW2jqf5");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+    height: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  padding:1rem 2rem;
+}
+.Mobiles ul>li{
+  margin-top: 15px;
+}
+.Mobiles ul a{
+  color: #fff;
+}
+.Mobiles ul li {
+font-weight: 300;
+
+}
+.subheading{
+  font-weight: 600;
+}
+.Mobiles ul:last-child{
+  margin-left: 20px;
+}

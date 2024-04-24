@@ -1,0 +1,45 @@
+
+.swiperconatier{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding-top: 10px;
+    margin-top: 5px;
+  }
+  .swiperconatier .BestDeals{
+    margin-bottom: 30px;
+    font-size: larger;
+    font-weight: 700;
+    margin-left: 2%;
+  }
+  .swiperconatier .BestDeals .block{
+display: none;
+  }
+  .swiperconatier .BestDeals a{
+    margin-left: 20px;
+  }
+  .swiperconatier .BestDeals a button {
+    margin-left: 20px;
+    padding: 4px 15px;
+    background-color: rgb(0, 41, 128);
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+  }
+  @media screen and (max-width:750px){
+    .swiperconatier .BestDeals a button{
+      float: right;
+      margin-right: 2%;
+      padding: 4px 15px;
+      font-size: 80%;
+    }
+    .swiperconatier .BestDeals{
+      font-size: 80%;
+    }
+    .swiperconatier .BestDeals .block{
+     display: inline;
+    }
+    .swiperconatier .BestDeals .block+span{
+     display: none;
+    }
+
+  }
