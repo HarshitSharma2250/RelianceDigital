@@ -1,0 +1,182 @@
+
+.cart_page { 
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem 2rem;
+    background-color: #f8f8f8;
+  }
+  
+
+.leftSection{
+   width: 60%;
+}
+
+
+.leftSection .item_pincode{
+background-color: #fff;
+padding:1.6% 1rem;
+font-size:100%;
+margin-bottom: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.item_pincode h2{
+    font-size: 100%;
+}
+
+.renderlistingdata{
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+  .eactitem {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .cart_item{
+    margin-bottom: 10px;
+  }
+
+  .cart_item img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+  }
+  .cart_item img+div{
+    margin-top: 20px;
+    padding: 1% 0;
+  }
+  .cart_item img+div p{
+    margin-top: 10px;
+  }
+  .buttonscart button{
+width: 50%;
+padding: 1% 0;
+cursor: pointer;
+  }
+  .buttonscart button:first-child{
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+  }
+  .buttonscart button:last-child{
+    background-color: #28a745;
+    color: #fff;
+  }
+
+.rightSection{
+    width:38%;
+    text-align: center;
+}
+.checkoutbtn{
+ width: 100%;  
+ font-size: large; 
+ padding:1.6% 0;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ background-color: rgb(228, 37, 41);
+ color: #fff;
+}
+
+.purchagecontent{
+    background-color:#fff;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 2rem 3rem;
+
+}
+.coupon{
+    min-width: 300px;
+    width:100%;
+    margin: auto;
+}
+
+  .coupon input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    height:30px;
+  }
+  
+  .coupon button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .totals h3{
+    text-align: left;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: gray;
+  }
+  .lowerpricesection span{
+font-weight: 700;
+margin-right: 5px;
+  }
+  .lowerpricesection div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+.purchagecontent hr{
+    margin-top: 10px;
+}
+.fixedPrices{
+    display: none;
+}
+  
+  @media screen and (max-width: 1000px) {
+    .cart_page{
+flex-direction: column;
+justify-content:flex-start;
+    }
+    .leftSection{
+        width: 100%;
+    }
+    .rightSection{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 672px){
+.eactitem{
+    flex-direction: column;
+}
+.eactitem img{
+    display: block;
+    margin: auto;
+}
+.eactitem div{
+margin-left: 10px;
+}
+  }
+  @media screen and (max-width: 632px){
+.forfixed{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+top: 95vh;
+width:98%;
+margin: auto;
+right: 1%;
+}
+.fixedPrices{
+    display: flex;
+    width: 43%;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+justify-content: center;
+align-items: center;
+padding: 2% 0;
+}
+.checkoutbtn{
+    width: 43%;
+}
+  }

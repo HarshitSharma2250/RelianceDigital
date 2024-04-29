@@ -16,8 +16,10 @@ function App() {
   useEffect(() => {
     setShowNavBar(location.pathname === '/');
   }, [location.pathname]);
+
   const checkWindowWidth = () => {
-    return window.innerWidth >1050;
+    return (window.innerWidth >1050);
+    
   };
   return (
     <>

@@ -47,6 +47,9 @@
     margin: 0 10px;
     color: #fff;
   }
+  .cart_login_link{
+display: flex;
+  }
   .cart_login_link a{
 font-size: large;
 font-weight: 700;

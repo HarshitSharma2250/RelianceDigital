@@ -32,10 +32,10 @@ height: 3rem;
     display: block;
     position: absolute;
     width: 90%;
-    height: 60vh;
+    height:auto;
     z-index: 100;
     left: 2%;
-    top: 22.4%;
+    top: 21.4%;
     transition: .5s ease-in-out;
 }
 @media screen  and(max-width:1380px) {

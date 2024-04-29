@@ -29,7 +29,7 @@ function HandleChange(e){
 
 async function HandleSubmit(e){
   e.preventDefault()
-LoadingData()
+ LoadingData()
 try {
   let res=await axios.post(`https://reqres.in/api/login`,text)
 if(res.data.token){
@@ -37,7 +37,7 @@ if(res.data.token){
   setlogin(true)
   Navigate('/')
 }
-TaskDone()
+ TaskDone()
 } catch (error) {
   ErrorData()
 }
@@ -46,10 +46,10 @@ TaskDone()
 if(data.isloading){
   return <Loading/>
 }
-
 if(data.iserror){
   return <ErrerDataa/>
 }
+
 
 
   return (

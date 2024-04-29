@@ -2,7 +2,7 @@
 const pincodedata={
     isloading:false,
     iserror:false,
-    pincode:[]
+    pincode:''
 }
 
 export function CityNameBYPinCode(state=pincodedata,{type,payload}){

@@ -7,6 +7,7 @@ import { SearchNavBar } from '../../components/search/SearchNavBar';
 import { IoMdCart } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { List } from '../../components/LIst of products/List';
+import { PinCodeNavBar } from '../../components/PincodeNavBar/PinCodeNavBar';
 
 
 export const NavBarAllPages = () => {
@@ -34,6 +35,8 @@ export const NavBarAllPages = () => {
         </Link>
         <SearchNavBar />
         <div className={navbarall.cart_login_link}>
+        <Link><PinCodeNavBar /> </Link>
+        <span> |</span>
           <Link to="/cart">
             <IoMdCart /> Cart
           </Link>{" "}

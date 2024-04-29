@@ -17,7 +17,7 @@ const Navigate=useNavigate()
 const[page,setpage]=useState(parseInt(searchparams.get('page'))||1)
 const[totalPages,settotalpages]=useState(1)
 const[sortitems,setsortItems]=useState(false)
-const[filtershowitems,setfiltershowitems]=useState(true)
+const[filtershowitems,setfiltershowitems]=useState(false)
 
 
 //......................query params.......................
@@ -80,6 +80,8 @@ function HandleClick(obj){
   localStorage.setItem('storesingledata',JSON.stringify(obj))
   Navigate('./homesinglepages')
   }
+
+  
 function HandlesortbtnShow(){
   setsortItems(true)
   setfiltershowitems(false)
@@ -99,7 +101,7 @@ function HandleHidefilteritems(){
   return (
 
     <div className={commondeal.container}>
-      <div className={commondeal.leftSideItems} style={{top:filtershowitems ? '70vh':'96vh'}}>
+      <div className={commondeal.leftSideItems} style={{top:filtershowitems ? '67vh':'96vh'}}>
       <div className={commondeal.brands_name}>filters category <span className={commondeal.hidefilter} onClick={HandleHidefilteritems}>X</span> </div>
       <div className={commondeal.leftcontainerCategorystyle}>
       {brandsname &&
@@ -117,7 +119,7 @@ function HandleHidefilteritems(){
         <div className={commondeal.rightContinercontent}>
 
 <p>showing total {products.length} products</p>
-<div className={commondeal.filteration} style={{top:sortitems ? '83.7vh':'96vh'}}>
+<div className={commondeal.filteration} style={{top:sortitems ? '85vh':'96vh'}}>
  <span>sort by price : <span className={commondeal.hidefilter} onClick={HandleHidefilter}>X</span> </span>
   <section>
  <button onClick={()=>HandlePrice('asc')}>price(low to high)</button>

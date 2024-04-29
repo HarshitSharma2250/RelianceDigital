@@ -1,0 +1,189 @@
+
+.mainContainer{
+  margin-top: 1rem;
+}
+.accessingdata{
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: auto;
+}
+.leftImgContainer{
+  width: 25%;
+display: flex;
+justify-content: center;
+align-items:center;
+  padding: 3rem 1rem;
+  background-color: #f1f1f1;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.leftImgContainer img {
+width: 100%;
+}
+
+.rightContentContainer{
+  width:70%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.description{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+background-color: #fff;
+  height:auto;
+  padding-left: 1rem;
+  padding-bottom: 10px;
+}
+.description p{
+  font-size: larger;
+  padding-top: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.dummyRatingContent{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+.dummyRatingContent p{
+  color: rgb(114, 114, 255);
+}
+.dummyRatingContent .rating{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.dummyRatingContent .rating p{
+  color: black;
+}
+.dynamicLowerContent{
+  display: flex;
+  padding-left: 20px;
+  padding-top: 1rem;
+  margin-top: 3px;
+  background-color: #fff;
+  justify-content: space-between;
+  height: 20rem;
+}
+.dynamicLowerleftContent{
+  width: 40%;
+  min-width: 20rem;
+}
+.dynamicLowerleftContent li{
+  list-style-type: disc;
+  list-style-position: inherit;
+}
+.dynamicLowerrightContent{
+  padding-right: 1rem;
+  font-size: 100%;
+}
+.dynamicLowerrightContent P{
+  margin-bottom: 10px;
+}
+.dynamicLowerrightContent h2{
+  margin-bottom: 1rem;
+  font-size: 100%;
+}
+.dynamicLowerrightContent .Add_BuyBtn{
+  margin-top: 1rem;
+}
+.Add_BuyBtn button{
+  font-size: 100%;
+  padding: 1% 3%;
+  cursor: pointer;
+}
+.Add_BuyBtn>button{
+  background-color: red;
+  margin-right: 20px;
+  color: #fff;
+} 
+
+ @media screen and (max-width:766px) {
+  .accessingdata{
+    flex-direction: column;
+  }
+  .leftImgContainer{
+    width:93%;
+  }
+  .rightContentContainer{
+    width:98%;
+  }
+.dummyRatingContent{
+min-width:25rem;
+}
+.rating+p{
+  display: none;
+}
+}
+
+@media screen and (max-width:606px) {
+  .dynamicLowerContent{
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .dynamicLowerrightContent{
+padding-top: 2rem;
+  }
+  .dynamicLowerrightContent p{
+    font-weight: 600;
+  }
+.dummyRatingContent{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+}
+@media screen and (max-width:606px) {
+  .dummyRatingContent>p:last-child{
+display: none;
+  }
+  .dummyRatingContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+
+
+
+
+
+.customerreviewscontainer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .reviewsummary {
+    margin-bottom: 20px;
+  }
+  
+  .starratings span {
+    margin-right: 10px;
+  }
+  
+  .writereviewbtn button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .writereviewbtn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .reviewitem {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

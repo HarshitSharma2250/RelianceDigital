@@ -13,6 +13,7 @@ import { CommonBestdeals } from '../pages/Commoncomponents for rederdata/CommonB
 import { HomeSinglePages } from '../pages/Single pages/HomeSinglePages'
 import { AllData } from '../pages/AllData page/AllData'
 import { SmartPhoness } from '../components/Sublistitems/smart phones/SmartPhoness'
+import { BuyNow } from '../components/Buy product/BuyNow'
 
 
 
@@ -32,7 +33,9 @@ export const AllRoutes = () => {
     <Route path='/commonbestdeals/:category' element={<CommonBestdeals/>}/>
     <Route path='/alldata/:category' element={<AllData/>}/>
     <Route path='/homesinglepages' element={<HomeSinglePages/>}/>
+    <Route path='/commonbestdeals/:category/homesinglepages' element={<HomeSinglePages/>}/>
     <Route path='/smartphones' element={<SmartPhoness/>}/>
+    <Route path='/buynow' element={<PrivateRoute><BuyNow/></PrivateRoute>}/>
 
 
   </Routes>

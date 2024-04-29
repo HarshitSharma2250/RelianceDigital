@@ -59,7 +59,7 @@
     margin-right: 20px;
 }
 .filteration button{
-    padding: 4px 8px;
+    padding: 2% 1%;
     cursor: pointer;
 }
 .filteration button:first-child{
@@ -125,4 +125,124 @@ padding-left: 1rem;
 section h3{
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.filtersbuttons{
+    display: none;
+}
+.hidefilter{
+    display: none;
+}
+@media screen and (max-width:1200px) {
+    .renderrightContainer{
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .rightContinercontent{
+
+align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .renderrightContainer{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+@media screen and (max-width:900px) {
+    .renderrightContainer{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .brands_name_ckeckbox input{
+        margin-right: .5rem;
+       width: 15px;
+       height: 15px;
+    }
+    .brands_name_ckeckbox p{
+        font-size: 100%;
+    }
+    .leftSideItems{
+        min-width: 300px;
+    }
+}
+@media screen and (max-width:900px){
+    .filtersbuttons{
+        display: flex;
+        position: fixed;
+        top: 95.3vh;
+        width: 98%;
+        right: 0%;
+        left: 1%;
+        z-index: 1200;
+    }
+    .filterbtnleft{
+       width: 50%;
+    padding: .5rem 0;
+    cursor: pointer;
+    }
+    .filterbtnright{
+        width: 50%;
+        right: 0%;
+        background-color: #e42529;
+        color: #fff;
+        padding: .5rem 0;
+        cursor: pointer;
+    }
+    .filteration{
+        position:fixed;
+       display: flex;
+       flex-direction: column;
+        background-color: rgb(214, 214, 214);
+        width: 90%;
+      padding:.5rem 2rem;
+      top: 76vh;
+      left: 0;
+      z-index: 1200;
+    }
+    .filteration>span{
+        display: flex;
+        justify-content: space-between;
+    }
+    .filteration section{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .filteration section button{
+        width:20%;
+    margin: 10px 0;
+    font-size: 70%;
+    min-width: 150px;
+    }
+    .hidefilter{
+        display: block;
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .leftSideItems{
+        position: fixed;
+        width:94%;
+    left: 2.5%;
+        margin-right: 30px;
+        min-width: 250px;
+      z-index: 1000;
+      height:36vh;
+      overflow-y: auto;
+      border: 1px solid black;
+      padding-bottom: 20px;
+    }
+    .leftcontainerCategorystyle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    }
+    .leftcontainerCategorystyle{
+        margin-top: 0;
+    }
+    .rightSideItems{
+        width:100%;
+    }
+
 }

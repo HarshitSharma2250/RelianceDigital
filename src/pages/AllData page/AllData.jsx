@@ -17,6 +17,8 @@ export const AllData = () => {
   const[totalPages,settotalpages]=useState(1)
   const brandsname = [...new Set(products.map(product => product.company))]
   const categoryname = [...new Set(products.map(product => product.category))]
+  const[sortitems,setsortItems]=useState(false)
+const[filtershowitems,setfiltershowitems]=useState(false)
 
   useEffect(()=>{
     setparams((prevparams)=>{
@@ -87,12 +89,26 @@ export const AllData = () => {
         Navigate(`./homesinglepages`)
       }
       
-      
+     //------------mobile version---------------------
+     function HandlesortbtnShow(){
+      setsortItems(true)
+      setfiltershowitems(false)
+    }
+    function HandleHidefilter(){
+      setsortItems(false)
+    }
+    function HandlefilterbtnShow(){
+      setfiltershowitems(true)
+      setsortItems(false)
+    }
+    function HandleHidefilteritems(){
+      setfiltershowitems(false)
+    } 
 
   return (
     <div className={alldata.container}>
-      <div className={alldata.leftSideItems}>
-      <div className={alldata.brands_name}>filters category </div>
+      <div className={alldata.leftSideItems} style={{top:filtershowitems ? '59vh':'96vh'}}>
+      <div className={alldata.brands_name}>filters category<span className={alldata.hidefilter} onClick={HandleHidefilteritems}>X</span>  </div>
       <div className={alldata.leftcontainerCategorystyle}>
       <section>
         <h3>company</h3>
@@ -124,8 +140,8 @@ export const AllData = () => {
 
 <p>showing total {products.length} products</p>
 
-<div className={alldata.filteration}>
- <span>sort by price : </span>
+<div className={alldata.filteration} style={{top:sortitems ? '85vh':'96vh'}}>
+ <span>sort by price : <span className={alldata.hidefilter} onClick={HandleHidefilter}>X</span> </span>
   <section>
  <button onClick={()=>HandlePrice('asc')}>price(low to high)</button>
   <button onClick={()=>HandlePrice('desc')}>price(high to low)</button>
@@ -152,6 +168,10 @@ export const AllData = () => {
      <button onClick={()=>HandleButton(-1)} disabled={page===1}>prev</button>
      <button onClick={()=>HandleButton(+1)} disabled={page===totalPages}>next</button>
      </div>
+      </div>
+      <div className={alldata.filtersbuttons}>
+<button className={alldata.filterbtnleft} onClick={HandlesortbtnShow}>sort items</button>
+<button className={alldata.filterbtnright} onClick={HandlefilterbtnShow}>filter item</button>
       </div>
     </div>
   )

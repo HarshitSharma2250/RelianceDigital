@@ -58,11 +58,11 @@ padding: 0;
 }
  .NavBarlist .allcontentNavBar{
     position: fixed;
-    width:20rem;
+    width:100%;
     height:auto;
     background-color: #e2e2e2;
     top: 80px;
-    left: -100%;
+    left: -120%;
     transition: all .5s;
     float: right;
   margin-right: 20px;
@@ -95,6 +95,12 @@ padding: 0;
 @media screen and (max-width:980px) {
     .naviconContainer{
         display: block;
+
+    }
+    .NavBarlist .allcontentNavBar{
+        overflow-y: auto;
+    height: 90vh;
+    border: 1px solid red;
     }
     .loweheader{
         display: none;
