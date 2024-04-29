@@ -31,7 +31,7 @@ setlogin(false)
         </div>
       </div>
       <div className={navbarmain.loweheader}>
-        <Link to="/RelianceDigital">
+        <Link to="/RelianceDigital/">
           <Logo />
         </Link>
       <SearchNavBar />
@@ -75,7 +75,7 @@ setlogin(false)
 
       </nav>
 
-      <Link to="/RelianceDigital">
+      <Link to="/RelianceDigital/">
           <Logo />
         </Link>
   </div>

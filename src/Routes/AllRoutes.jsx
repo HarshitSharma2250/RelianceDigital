@@ -20,7 +20,7 @@ import { BuyNow } from '../components/Buy product/BuyNow'
 export const AllRoutes = () => {
   return (
   <Routes>
-    <Route path='/RelianceDigital' element={<AppLayOut/>}/>
+    <Route path='/RelianceDigital/' element={<AppLayOut/>}/>
     <Route path='/findstore' element={<FindaStore/>}/>
     <Route path='/buyingguides' element={<BuyingGuides/>}/>
     <Route path='/contactus' element={<ContactUs/>}/>

@@ -30,7 +30,7 @@ export const NavBarAllPages = () => {
   </thead>
 </table>
 <div className={navbarall.loweheader}>
-<Link to="/RelianceDigital">
+<Link to="/RelianceDigital/">
           <Logo />
         </Link>
         <SearchNavBar />

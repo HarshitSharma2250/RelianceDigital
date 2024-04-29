@@ -35,7 +35,7 @@ try {
 if(res.data.token){
   localStorage.setItem('storedata',JSON.stringify(true))
   setlogin(true)
-  Navigate('/RelianceDigital')
+  Navigate('/RelianceDigital/')
 }
  TaskDone()
 } catch (error) {
