@@ -14,7 +14,7 @@ function App() {
   const [showNavBar, setShowNavBar] = useState(true);
 
   useEffect(() => {
-    setShowNavBar(location.pathname === '/');
+    setShowNavBar(location.pathname === '/RelianceDigital');
   }, [location.pathname]);
 
   const checkWindowWidth = () => {
