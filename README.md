@@ -4,7 +4,7 @@ this is a clone of Reliance Digital Ecommerce   ,  is operated by Reliance Retai
 
 ## Live Demo
 
-Explore the live demo: [Flipkart Clone](https://65aeb52a4dab7b3a0094a54a--superlative-blini-198462.netlify.app/)
+Explore the live demo: [reliance digital ecommerce](https://harshitsharma2250.github.io/RelianceDigital/)
 
 
 ## Color Reference
