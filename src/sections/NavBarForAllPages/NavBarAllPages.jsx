@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import navbarall from './NavBarAllPages.module.css'
 import { Link } from 'react-router-dom'
 import { LuBus } from "react-icons/lu";
@@ -8,9 +8,24 @@ import { IoMdCart } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { List } from '../../components/LIst of products/List';
 import { PinCodeNavBar } from '../../components/PincodeNavBar/PinCodeNavBar';
+import { Contaxtinfo } from '../../context/Context';
 
 
 export const NavBarAllPages = () => {
+  const{islogin,setlogin}=useContext(Contaxtinfo)
+
+
+  function HandleLogin(){
+    localStorage.setItem('storedata',JSON.stringify(false))
+    setlogin(false)
+    }
+
+
+
+
+
+
+
   return (
     <>
     <div className={navbarall.NavBarAllPages}>
@@ -41,9 +56,11 @@ export const NavBarAllPages = () => {
             <IoMdCart /> Cart
           </Link>{" "}
           <span> | </span>
-          <Link to="/login">
-            <FaUser /> Log in
-          </Link>
+          <div>
+           {
+            islogin ?  <p style={{cursor:'pointer'}} onClick={HandleLogin}> log out</p> : <Link to="/login"><FaUser /> log in </Link> 
+           }
+           </div>
         </div>
 </div>
 
