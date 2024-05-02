@@ -28,7 +28,7 @@ const Navigate=useNavigate()
 
       function HandleClick(obj){
         localStorage.setItem('storesingledata',JSON.stringify(obj))
-        console.log(obj)
+        console.log('tata')
         Navigate('./homesinglepages')
         }
 
