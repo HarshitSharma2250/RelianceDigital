@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,7 +19,16 @@ let arrImage=[
     `https://www.reliancedigital.in/medias/Summer-Ready-Sale-Beat-the-Heat-Banner-freebie-D.jpg?context=bWFzdGVyfGltYWdlc3wxMjM2NDR8aW1hZ2UvanBlZ3xpbWFnZXMvaGIxL2hjNy8xMDEyOTg5NzE5MzUwMi5qcGd8NzRlNGEwOGU2YzE4NGU4OWJmMmEwOWY1M2ZjYmZhMjg5MzE1MDI5NWUxNDM4MTk1OTAyNzUyNjRlMTEwNGQyNg`,
     `https://www.reliancedigital.in/medias/Digital-Big-Screen-Fest-Banner-D.jpg?context=bWFzdGVyfGltYWdlc3wyNDI4Mzl8aW1hZ2UvanBlZ3xpbWFnZXMvaGZiL2hjNi8xMDEyMDIzNzkwNzk5OC5qcGd8YWMzM2UzY2Q4YmE1YWE1MmM1NmNkNGM0NGJkNjU1Mjg4NzFmNzQwYTE1ZmVlNTViODQ0NWY5Y2ZkMmFmZjk2NA`,
 ]
-
+const [showNavigation, setShowNavigation] = useState(window.innerWidth >= 700);
+useEffect(() => {
+  const handleResize = () => {
+    setShowNavigation(window.innerWidth >= 700);
+  };
+  window.addEventListener('resize', handleResize);
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
 
 
 
@@ -37,7 +46,7 @@ let arrImage=[
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={showNavigation}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >

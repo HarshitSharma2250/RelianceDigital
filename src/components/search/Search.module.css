@@ -3,7 +3,6 @@
     width: 30%;
     min-width: 300px;
     padding: 0.4rem;
-    border-radius: 4px;
     border: 1px solid red;
     border-radius: 15px;
   }
@@ -32,7 +31,20 @@
     .mainOfSearchBar{
       width: 90%;
       margin: auto;
-    margin-right: 3rem;
-     
+    }
+  }
+  @media screen and (max-width:390px) {
+    .inputfield {
+      font-size: 0.6rem;
+      border: none;
+      outline: none;
+      background-color: #fff;
+      font-size: large;
+    }
+    .searchIcon{
+      font-size: 1.5rem;
+    }
+    .mainOfSearchBar{
+      margin: auto;
     }
   }

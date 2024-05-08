@@ -111,3 +111,15 @@ padding: 0;
         padding-left: 20px;
     }
 }
+@media screen and (max-width:600px) {
+    .checkbtn{
+        font-size: 25px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:390px) {
+    .NavBar{
+        padding: 1rem 25px .6rem 20px;
+        background-color: #e42529;
+    }
+}

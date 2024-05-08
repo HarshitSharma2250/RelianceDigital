@@ -82,7 +82,7 @@ let data=[
 
   return (
     <div className={mobilebonaja.swiperconatier}>
-    <div className={mobilebonaja.BestDeals}>Smartphone Bonanza | 10% (Upto Rs.3000 off)
+    <div className={mobilebonaja.BestDeals}>Smartphone Bonanza <span>| 10% (Upto Rs.3000 off)</span>
       <Link to="/commonbestdeals/mobilebonaja"><button>view all</button></Link>
       </div>
         <CommonCarocial data={data}/>

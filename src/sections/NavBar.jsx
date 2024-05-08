@@ -71,10 +71,7 @@ setlogin(false)
 <NavBarListitems/>
  </div>
 </div>
-
-
       </nav>
-
       <Link to="/RelianceDigital/">
           <Logo />
         </Link>

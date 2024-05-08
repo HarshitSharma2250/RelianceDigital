@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Thirdcarosical from'./thirdcarosical.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -15,6 +15,16 @@ export const ThirdcarosicalHomePgae = () => {
         `https://www.reliancedigital.in/medias/HDFC-Bank-Strips-1440x120-px.jpg?context=bWFzdGVyfGltYWdlc3w4MjkxOHxpbWFnZS9qcGVnfGltYWdlcy9oMDAvaDJkLzEwMTMzNDM1ODA5ODIyLmpwZ3xlMDg1ZjZhZDMyZjZkOWQ5ZjA1OTA4ODk2YTJmODk2MDBiY2E4NTZmMmQzZTA4MTVkZDkzZDZjOWM4MDQ3ODM4`,
         
     ]
+    const [showNavigation, setShowNavigation] = useState(window.innerWidth >= 700);
+    useEffect(() => {
+      const handleResize = () => {
+        setShowNavigation(window.innerWidth >= 700);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
   return (
     <div className={Thirdcarosical.topimgcarocial}>
     <Swiper 
@@ -29,7 +39,7 @@ export const ThirdcarosicalHomePgae = () => {
  pagination={{
    clickable: true,
  }}
- navigation={true}
+ navigation={showNavigation}
  modules={[Autoplay, Pagination, Navigation]}
  className="mySwiper"
 >

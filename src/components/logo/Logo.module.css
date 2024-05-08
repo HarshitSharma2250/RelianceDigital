@@ -1,0 +1,13 @@
+
+@media screen and (max-width:750px){
+    .pic{
+width:100%;
+
+    }
+}
+@media screen and (max-width:391px){
+    .pic{
+width:85%;
+margin-top:5px;
+    }
+}
