@@ -91,7 +91,7 @@ let data=[
   return (
     <div className={bestaudio.swiperconatier}>
     <div className={bestaudio.BestDeals}>best selling audio accessories
-      <Link to="/commonbestdeals/audio accessories"><button>view all</button></Link>
+      <Link to="/RelianceDigital/commonbestdeals/audio accessories"><button>view all</button></Link>
       </div>
         <CommonCarocial data={data}/>
     </div>

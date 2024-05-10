@@ -11,7 +11,7 @@ export const HomeAppliences = () => {
       <Link className={homeset.directhead} to={`/#`}>Air Conditioners</Link>
       <ul>
         <li>
-<Link to="/commonbestdeals/airconditioners" >Split Air Conditioners</Link>   
+<Link to="/RelianceDigital/commonbestdeals/airconditioners" >Split Air Conditioners</Link>   
         </li>
 <li>
 <Link>Window Air Conditioners</Link>
@@ -25,7 +25,7 @@ export const HomeAppliences = () => {
       </ul>
       </li>
       <li>
-    <Link className={homeset.directhead} to="/commonbestdeals/aircoolar">Air Coolers</Link>
+    <Link className={homeset.directhead} to="/RelianceDigital/commonbestdeals/aircoolar">Air Coolers</Link>
   </li>
       <li>
         <Link className={homeset.directhead}>Air Purifiers</Link>
@@ -55,7 +55,7 @@ export const HomeAppliences = () => {
       <Link>Single Door</Link>
     </li>
     <li>
-      <Link to={`/commonbestdeals/refrigerators`}>Double Door</Link>
+      <Link to={`/RelianceDigital/commonbestdeals/refrigerators`}>Double Door</Link>
     </li>
   </ul>
 </li>

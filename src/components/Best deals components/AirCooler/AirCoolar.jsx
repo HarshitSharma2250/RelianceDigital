@@ -84,7 +84,7 @@ export const AirCoolar = () => {
     <div className={aircooler.swiperconatier}>
     
     <div className={aircooler.BestDeals}>best deals on Air Coolers 
-      <Link to="/commonbestdeals/aircoolar"><button>view all</button></Link>
+      <Link to="/RelianceDigital/commonbestdeals/aircoolar"><button>view all</button></Link>
       </div>
         <CommonCarocial data={data} />
     </div>

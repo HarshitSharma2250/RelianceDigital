@@ -25,7 +25,7 @@ export const Computers = () => {
       </ul>
       </li>
       <li>
-    <Link className={laptopsset.directhead} to="/commonbestdeals/aircoolar">Computer Monitors</Link>
+    <Link className={laptopsset.directhead} to="/RelianceDigital/commonbestdeals/aircoolar">Computer Monitors</Link>
   </li>
       <li>
         <Link className={laptopsset.directhead}>Desktops & All-In-Ones</Link>

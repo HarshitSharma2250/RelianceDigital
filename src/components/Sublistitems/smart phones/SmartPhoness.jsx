@@ -13,7 +13,7 @@ export const SmartPhoness = () => {
   const mainDivRef = useRef();
 let arrImage=[
   {
-    link:`/commonbestdeals/samsung`,
+    link:`/RelianceDigital/commonbestdeals/samsung`,
     pic:`https://www.reliancedigital.in/medias/Samsung-Galaxy-A55-A35-5G-Carousel-Banner-19-03-2024-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDgyMTR8aW1hZ2UvanBlZ3xpbWFnZXMvaDZiL2g1Zi8xMDEyMjIwNDIxNzM3NC5qcGd8NzI2ODkyZjc2NWMyNTg3ZDA5NmFjNWMxOGNjY2E0MzQ2M2IxNWUwMDAwMWE3NmRkM2M3YjZhMGIwOWJiMjEzYQ`
   },
   {
@@ -21,15 +21,15 @@ let arrImage=[
     pic:`https://www.reliancedigital.in/medias/Oneplus-Nord-CE4-New-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDk2NzZ8aW1hZ2UvanBlZ3xpbWFnZXMvaGY1L2g2Yy8xMDEyNzg3OTg5NzExOC5qcGd8N2VhYTJjODIyZWY4NTY5MzU2MzI3NWIzNTI0YTM1OTQ5YWQ1YzJhZmI3N2FhMzdmOTMyYWE4YjFkNjNmMDk0OA`
   },
   {
-    link:`/commonbestdeals/jiophone`,
+    link:`/RelianceDigital/commonbestdeals/jiophone`,
     pic:`https://www.reliancedigital.in/medias/JioPrime-x-YouTube-Banner-D-rev-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDU4ODl8aW1hZ2UvanBlZ3xpbWFnZXMvaGU4L2hjMi8xMDEyOTYyMDIzODM2Ni5qcGd8YzhiNGZhMTY0ZWIwMzE1NDJlY2FhMjNhNWI3MmZlZWQzM2Q0YmJjMmRiMzAyNTQyMjY2YzYyMzBhMjViZThjOQ`
   },
   {
-    link:`/commonbestdeals/realme`,
+    link:`/RelianceDigital/commonbestdeals/realme`,
     pic:`https://www.reliancedigital.in/medias/RealMe-C55-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDczMTh8aW1hZ2UvanBlZ3xpbWFnZXMvaDI3L2g3Yy8xMDExNzY2NzcxNzE1MC5qcGd8NjU5OGM1ZTU0Y2MwMWFlMWUxOGU1ZmNkMTg5ZGMxZTdiMzBjNGMwYjM4ZDA1NmI3NWYwYzE3NzM3NWZiMjRhYQ`
   },
   {
-    link:`/commonbestdeals/vivo`,
+    link:`/RelianceDigital/commonbestdeals/vivo`,
     pic:`https://www.reliancedigital.in/medias/Vivo-T3-D.jpg?context=bWFzdGVyfGltYWdlc3wxMjY2NTd8aW1hZ2UvanBlZ3xpbWFnZXMvaGQ5L2g4Yy8xMDEyODg0MzcwMjMwMi5qcGd8MjBlYjJjMWNiMmE4MDQyZDRhNmNmOTFmYWQ2YWQ4N2IxYzMzNjFhODc0YzI3MGY3YTExZDBkNDA4NWRhYzg5ZQ`
   },
   {
@@ -44,13 +44,13 @@ let arrImage=[
 ]
 let data=[
   {
-    link1:`/commonbestdeals/realme`,
+    link1:`/RelianceDigital/commonbestdeals/realme`,
     pic1:'https://www.reliancedigital.in/medias/Smartphone-Shop-By-Brands-Realme.jpg?context=bWFzdGVyfGltYWdlc3w1NTkyfGltYWdlL2pwZWd8aW1hZ2VzL2hlMS9oMzYvOTQ3Mzc1OTY0MTYzMC5qcGd8MGMxNDBhMWRmODcxODgzNGMwMjBmYjk2MTU2NTYyZWZlNDBkNTM5OGNhNzY4MmU2NTM2NmRjZGQ1YzQ1MjE1Yg',
-    link2:`/commonbestdeals/vivo`,
+    link2:`/RelianceDigital/commonbestdeals/vivo`,
     pic2:'https://www.reliancedigital.in/medias/Vivo-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3w1OTM2fGltYWdlL2pwZWd8aW1hZ2VzL2g2Yy9oNjQvOTA5ODk0MTQzMTgzOC5qcGd8MDZhNTdmMjE2Y2Q2ZGJjNzE2MzQ5N2JjZTkzZWQ5OGJhZGNhMGQ4MTkwOTNlMmIwYTE1NzJlNGIxZjhiZWZkNg'
   },
   {
-    link1:`/commonbestdeals/samsung`,
+    link1:`/RelianceDigital/commonbestdeals/samsung`,
     pic1:'https://www.reliancedigital.in/medias/Samsung-Logo-final.jpg?context=bWFzdGVyfGltYWdlc3w0NTIyfGltYWdlL2pwZWd8aW1hZ2VzL2gxYy9oNDcvOTQ2MjEzNzg4MDYwNi5qcGd8ZmMxZGU1ODY3MGEzZjBkYzg2Y2EwNDRlZWE2ZjE2MmQ5NjY4MDQ4YjkzM2U1ZWNmOTkzNzEwNDgxNmI0NmUzYQ',
     link2:`/commonbestdeals/redmi`,
     pic2:'https://www.reliancedigital.in/medias/Logo-Mi.jpg?context=bWFzdGVyfGltYWdlc3w2MDQ0fGltYWdlL2pwZWd8aW1hZ2VzL2gwOC9oNWIvOTI5MDUzNjY4MTUwMi5qcGd8ZTY0NzNkZjVlY2U3OWRlNGZiYmIxOTY4ZWFkYjQ5NmIzNTZmYzU3YjM4NGUyY2Q2NTU4NzlhMjllMWRjYThkMA'

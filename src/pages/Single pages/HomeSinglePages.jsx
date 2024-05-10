@@ -44,13 +44,13 @@ const Navigate=useNavigate()
       let filterdata = CartData.findIndex((ele) => ele.id === data.id);
       if (filterdata !== -1) {
         toast.success('Item already added to cart');
-        return Navigate('/cart')
+        return Navigate('/RelianceDigital/cart')
       } else {
         CartData.push(data);
       }
       localStorage.setItem("storecart", JSON.stringify(CartData));
       toast.success('Item added to cart successfully');
-      Navigate('/cart')
+      Navigate('/RelianceDigital/cart')
     }
   }
 
@@ -181,7 +181,7 @@ const Navigate=useNavigate()
                 </div>
                 <div className={hsinglepage.Add_BuyBtn}>
                   <button onClick={() => HandleCart(data)}>Add to cart</button>
-                  <Link to={`/buynow`}>
+                  <Link to={`/RelianceDigital/buynow`}>
                     <button>buy now</button>
                   </Link>
                 </div>

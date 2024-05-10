@@ -38,7 +38,7 @@ export const AppLayOut = () => {
   <BandPromise/>
   <ThirdcarosicalHomePgae/>
   <SmartPhoneBonanja/>
-  <Link to={`/alldata/AllData`} className={styles.alldata}> <button>view all</button></Link>
+  <Link to={`/RelianceDigital/alldata/AllData`} className={styles.alldata}> <button>view all</button></Link>
     </div>
   )
 }

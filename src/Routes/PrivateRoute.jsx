@@ -7,6 +7,6 @@ export const PrivateRoute = ({children}) => {
 const{islogin}=useContext(Contaxtinfo) 
 console.log(islogin);
   return (
-    islogin ? children : <Navigate to='/login'/>
+    islogin ? children : <Navigate to='/RelianceDigital/login'/>
   )
 }

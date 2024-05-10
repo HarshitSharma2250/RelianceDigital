@@ -21,24 +21,23 @@ export const AllRoutes = () => {
   return (
   <Routes>
     <Route path='/RelianceDigital/' element={<AppLayOut/>}/>
-    <Route path='/findstore' element={<FindaStore/>}/>
-    <Route path='/buyingguides' element={<BuyingGuides/>}/>
-    <Route path='/contactus' element={<ContactUs/>}/>
-    <Route path='/cart' element={<PrivateRoute><Cart/></PrivateRoute>}/>
-    <Route path='/login' element={<Login/>}/>
-    <Route path='/easyreturn' element={<EasyReturn/>}/>
-    <Route path='/serviceguarantee' element={<ServiceGuarantee/>}/>
-    <Route path='/findstore' element={<FindaStore/>}/>
-    <Route path='/contactus' element={<ContactUs/>}/>
-    <Route path='/commonbestdeals/:category' element={<CommonBestdeals/>}/>
-    {/* <Route path='/commonbestdeals/RelianceDigital/homesinglepages' element={<CommonBestdeals/>}/> */}
-    <Route path='/alldata/:category' element={<AllData/>}/>
-    <Route path='/homesinglepages' element={<HomeSinglePages/>}/>
-    <Route path='/commonbestdeals/:category/homesinglepages' element={<HomeSinglePages/>}/>
+    <Route path='/RelianceDigital/findstore' element={<FindaStore/>}/>
+    <Route path='/RelianceDigital/buyingguides' element={<BuyingGuides/>}/>
+    <Route path='/RelianceDigital/contactus' element={<ContactUs/>}/>
+    <Route path='/RelianceDigital/cart' element={<PrivateRoute><Cart/></PrivateRoute>}/>
+    <Route path='/RelianceDigital/login' element={<Login/>}/>
+    <Route path='/RelianceDigital/easyreturn' element={<EasyReturn/>}/>
+    <Route path='/RelianceDigital/serviceguarantee' element={<ServiceGuarantee/>}/>
+    <Route path='/RelianceDigital/findstore' element={<FindaStore/>}/>
+    <Route path='/RelianceDigital/contactus' element={<ContactUs/>}/>
+    <Route path='/RelianceDigital/commonbestdeals/:category' element={<CommonBestdeals/>}/>
+    <Route path='/RelianceDigital/alldata/:category' element={<AllData/>}/>
     <Route path='/RelianceDigital/homesinglepages' element={<HomeSinglePages/>}/>
-    <Route path='/alldata/AllData/homesinglepages' element={<HomeSinglePages/>}/>
-    <Route path='/smartphones' element={<SmartPhoness/>}/>
-    <Route path='/buynow' element={<PrivateRoute><BuyNow/></PrivateRoute>}/>
+    <Route path='/RelianceDigital/commonbestdeals/:category/homesinglepages' element={<HomeSinglePages/>}/>
+    <Route path='/RelianceDigital/homesinglepages' element={<HomeSinglePages/>}/>
+    <Route path='/RelianceDigital/alldata/AllData/homesinglepages' element={<HomeSinglePages/>}/>
+    <Route path='/RelianceDigital/smartphones' element={<SmartPhoness/>}/>
+    <Route path='/RelianceDigital/buynow' element={<PrivateRoute><BuyNow/></PrivateRoute>}/>
 
 
   </Routes>

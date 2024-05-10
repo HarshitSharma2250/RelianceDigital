@@ -17,10 +17,10 @@ export const Footer = () => {
         <Link to='/#'>laptops</Link>
         <Link to='/#'>DSLR cameras</Link>
         <Link to='/#'>television</Link>
-        <Link to='/commonbestdeals/airconditioners'>Air conditioners</Link>
-        <Link to='/commonbestdeals/refrigerators'>refrigerators</Link>
-        <Link to='/commonbestdeals/homeandkitchen'>kitchen appliences</Link>
-        <Link to='/commonbestdeals/audio accessories'> accessories</Link>
+        <Link to='/RelianceDigital/commonbestdeals/airconditioners'>Air conditioners</Link>
+        <Link to='/RelianceDigital/commonbestdeals/refrigerators'>refrigerators</Link>
+        <Link to='/RelianceDigital/commonbestdeals/homeandkitchen'>kitchen appliences</Link>
+        <Link to='/RelianceDigital/commonbestdeals/audio accessories'> accessories</Link>
         <Link to='/#'> presonal care and grooming</Link>
     </nav>
 </div>

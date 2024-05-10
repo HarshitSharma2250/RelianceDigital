@@ -23,7 +23,7 @@ export const KitchenAppliences = () => {
       </ul>
       </li>
       <li>
-    <Link className={kitchenset.directhead} to="/commonbestdeals/aircoolar">Water Purifiers</Link>
+    <Link className={kitchenset.directhead} to="/RelianceDigital/commonbestdeals/aircoolar">Water Purifiers</Link>
   </li>
       <li>
         <Link className={kitchenset.directhead}>Electric Kettle</Link>

@@ -23,12 +23,12 @@ export const NavBarListitems = () => {
 <p className={navbarlistitems.iconrotate}><FaChevronDown /></p>
     </label>
 <ul className={navbarlistitems.sublistitems}>
-<li className={navbarlistitems.directchildlist}><Link to={`/smartphones`}>smart phones</Link></li>
+<li className={navbarlistitems.directchildlist}><Link to={`/RelianceDigital/smartphones`}>smart phones</Link></li>
 <li >
 <Link className={navbarlistitems.directchildlist} to={`/#`}>smart watches</Link> 
  <ul className={navbarlistitems.subchildul}>
     <li>
-   <Link to={`/commonbestdeals/applewatch`}>Apple</Link>  
+   <Link to={`/RelianceDigital/commonbestdeals/applewatch`}>Apple</Link>  
     </li>
     <li>
 <Link to={`/#`}>Samsung</Link>
@@ -61,7 +61,7 @@ export const NavBarListitems = () => {
 <Link to={`/#`}>car mobile holders</Link>
     </li>
     <li>
-<Link  to={`/commonbestdeals/storage`}> memory cards</Link>
+<Link  to={`/RelianceDigital/commonbestdeals/storage`}> memory cards</Link>
     </li>
  </ul>
   
@@ -84,7 +84,7 @@ export const NavBarListitems = () => {
     </label>
 <ul className={navbarlistitems.sublistitems}>
 <li>
-<Link className={navbarlistitems.directchildlist} to={`/commonbestdeals/bigscreentv`}>
+<Link className={navbarlistitems.directchildlist} to={`/RelianceDigital/commonbestdeals/bigscreentv`}>
     Television</Link>
 <ul  className={navbarlistitems.subchildul}>
     <li>
@@ -110,10 +110,10 @@ export const NavBarListitems = () => {
     </label>
 <ul className={navbarlistitems.sublistitems}>
 <li  className={navbarlistitems.directchildlist}>
-<Link  to={`/commonbestdeals/appleaudoaccessories`}>headphones & headsets</Link>
+<Link  to={`/RelianceDigital/commonbestdeals/appleaudoaccessories`}>headphones & headsets</Link>
 </li>
 <li  className={navbarlistitems.directchildlist}>
-<Link to={`/commonbestdeals/boatsounders`}>speakers & soundbars</Link>
+<Link to={`/RelianceDigital/commonbestdeals/boatsounders`}>speakers & soundbars</Link>
 </li>
 </ul>
 </div>
@@ -127,13 +127,13 @@ export const NavBarListitems = () => {
     </label>
 <ul className={navbarlistitems.sublistitems}>
 <li  className={navbarlistitems.directchildlist}>
-    <Link to="/commonbestdeals/airconditioners">Air Conditiors</Link>
+    <Link to="/RelianceDigital/commonbestdeals/airconditioners">Air Conditiors</Link>
 </li>
 <li  className={navbarlistitems.directchildlist}>
-    <Link  to="/commonbestdeals/aircoolar">Air Coolers</Link>
+    <Link  to="/RelianceDigital/commonbestdeals/aircoolar">Air Coolers</Link>
 </li>
 <li  className={navbarlistitems.directchildlist}>
-    <Link to={`/commonbestdeals/refrigerators`}>refrigerators</Link>
+    <Link to={`/RelianceDigital/commonbestdeals/refrigerators`}>refrigerators</Link>
 </li>
 </ul>
 </div>
@@ -147,7 +147,7 @@ export const NavBarListitems = () => {
     </label>
 <ul className={navbarlistitems.sublistitems}>
 <li  className={navbarlistitems.directchildlist}>
-<Link to={`/commonbestdeals/homeandkitchen`}>kitchen appliances</Link>
+<Link to={`/RelianceDigital/commonbestdeals/homeandkitchen`}>kitchen appliances</Link>
 </li>
 </ul>
 </div>
@@ -157,16 +157,16 @@ export const NavBarListitems = () => {
 
 <p className={navbarlistitems.helpitem}>
 <label htmlFor='checkeditem' className={navbarlistitems.headingitem}>
-    <Link to="/findstore"> <CiLocationOn /> Find a store </Link> 
+    <Link to="/RelianceDigital/findstore"> <CiLocationOn /> Find a store </Link> 
     </label>
     <label htmlFor='checkeditem' className={navbarlistitems.headingitem}>
-    <Link to="/buyingguides"><AiOutlineExclamation /> buying guides</Link>
+    <Link to="/RelianceDigital/buyingguides"><AiOutlineExclamation /> buying guides</Link>
     </label>
     <label htmlFor='checkeditem' className={navbarlistitems.headingitem}>
-    <Link to="/contactus"><FaPhone /> contact us</Link>     
+    <Link to="/RelianceDigital/contactus"><FaPhone /> contact us</Link>     
     </label>
     <label htmlFor='checkeditem' className={navbarlistitems.headingitem}>
-    <Link to="/cart">  <IoMdCart /> Cart</Link> 
+    <Link to="/RelianceDigital/cart">  <IoMdCart /> Cart</Link> 
     </label>
 </p>
 

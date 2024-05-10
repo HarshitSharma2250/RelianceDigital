@@ -76,7 +76,7 @@ export const BestSellingCanonPrinters = () => {
   return (
     <div className={sellingprinters.swiperconatier}>
     <div className={sellingprinters.BestDeals}>Bestselling Printers starting at Rs.39 <span className={sellingprinters.block}>...</span> <span>99 | No Cost EMI available</span>
-      <Link to="/commonbestdeals/printers"><button>view all</button></Link>
+      <Link to="/RelianceDigital/commonbestdeals/printers"><button>view all</button></Link>
       </div>
         <CommonCarocial data={data}/>
     </div>

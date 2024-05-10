@@ -25,9 +25,9 @@ setlogin(false)
     <div className={navbarmain.NavBar}>
       <div className={navbarmain.HeaderUpper}>
         <div>
-          <Link to="/findstore">Find a store </Link> |
-          <Link to="/buyingguides">buying guides</Link> |
-          <Link to="/contactus">contact us</Link>
+          <Link to="/RelianceDigital/findstore">Find a store </Link> |
+          <Link to="/RelianceDigital/buyingguides">buying guides</Link> |
+          <Link to="/RelianceDigital/contactus">contact us</Link>
         </div>
       </div>
       <div className={navbarmain.loweheader}>
@@ -37,13 +37,13 @@ setlogin(false)
       <SearchNavBar />
         <div className={navbarmain.cart_login_link}>
           <PinCodeNavBar />  |
-          <Link to="/cart">
+          <Link to="/RelianceDigital/cart">
             <IoMdCart /> Cart
           </Link>{" "}
            | 
            <div>
            {
-            islogin ?  <p style={{cursor:'pointer'}} onClick={HandleLogin}> log out</p> : <Link to="/login"><FaUser /> log in </Link> 
+            islogin ?  <p style={{cursor:'pointer'}} onClick={HandleLogin}> log out</p> : <Link to="/RelianceDigital/login"><FaUser /> log in </Link> 
            }
            </div>
         </div>
@@ -77,7 +77,7 @@ setlogin(false)
         </Link>
   </div>
 
-<Link to="/cart">
+<Link to="/RelianceDigital/cart">
             <IoMdCart /> Cart
           </Link>
 </section>

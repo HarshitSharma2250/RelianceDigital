@@ -11,7 +11,7 @@ export const Audio = () => {
       <Link className={audioset.directhead} to={`/#`}>Headphones & Headsets</Link>
       <ul>
         <li>
-<Link to={`/commonbestdeals/appleaudoaccessories`} >True Wireless</Link>   
+<Link to={`/RelianceDigital/commonbestdeals/appleaudoaccessories`} >True Wireless</Link>   
         </li>
 <li>
 <Link>Bluetooth Neckbands</Link>
@@ -39,7 +39,7 @@ export const Audio = () => {
     <Link>Wired Headphones</Link>
     </li>
     <li>
-    <Link to={`/commonbestdeals/boatsounders`}>Speakers & Soundbars</Link>
+    <Link to={`/RelianceDigital/commonbestdeals/boatsounders`}>Speakers & Soundbars</Link>
     </li>
     <li>
     <Link>Bluetooth Speakers</Link>

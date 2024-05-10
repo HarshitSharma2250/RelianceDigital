@@ -35,12 +35,12 @@ export const NavBarAllPages = () => {
   <thead>
     <tr>
       <th>Our Brand Promise</th>
-      <th><Link to='./easyreturn'>Easy to Return</Link></th>
+      <th><Link to='./RelianceDigital/easyreturn'>Easy to Return</Link></th>
       <th><LuBus /> Next day delivery</th>
-      <th><Link to='./service guarantee'>Qservice Guarantee</Link></th>
+      <th><Link to='./RelianceDigital/service guarantee'>Qservice Guarantee</Link></th>
       <th><LuBus />Unmatched Network</th>
-      <th><Link to='./findstore'>Find the store </Link></th>
-      <th><Link to='./contactus'>Contact Us</Link></th>
+      <th><Link to='./RelianceDigital/findstore'>Find the store </Link></th>
+      <th><Link to='./RelianceDigital/contactus'>Contact Us</Link></th>
     </tr>
   </thead>
 </table>
@@ -52,13 +52,13 @@ export const NavBarAllPages = () => {
         <div className={navbarall.cart_login_link}>
         <Link><PinCodeNavBar /> </Link>
         <span> |</span>
-          <Link to="/cart">
+          <Link to="/RelianceDigital/cart">
             <IoMdCart /> Cart
           </Link>{" "}
           <span> | </span>
           <div>
            {
-            islogin ?  <p style={{cursor:'pointer'}} onClick={HandleLogin}> log out</p> : <Link to="/login"><FaUser /> log in </Link> 
+            islogin ?  <p style={{cursor:'pointer'}} onClick={HandleLogin}> log out</p> : <Link to="/RelianceDigital/login"><FaUser /> log in </Link> 
            }
            </div>
         </div>

@@ -10,7 +10,7 @@ export const Televisions = () => {
       <Link className={televisionset.directhead} to={`/#`}>television</Link>
       <ul>
         <li>
-<Link to={`/commonbestdeals/bigscreentv`} >smart TV's</Link>   
+<Link to={`/RelianceDigital/commonbestdeals/bigscreentv`} >smart TV's</Link>   
         </li>
 <li>
 <Link>32 Inch</Link>

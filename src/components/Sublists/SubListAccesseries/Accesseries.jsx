@@ -54,7 +54,7 @@ export const Accesseries = () => {
       <Link>Memory Cards</Link>
     </li>
     <li>
-    <Link  to={`/commonbestdeals/storage`}>Pen Drives & OTG Drives</Link>
+    <Link  to={`/RelianceDigital/commonbestdeals/storage`}>Pen Drives & OTG Drives</Link>
     </li>
     <li>
     <Link>Hard Disks & SSD</Link>

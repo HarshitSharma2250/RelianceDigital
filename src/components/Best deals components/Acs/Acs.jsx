@@ -84,7 +84,7 @@ const data=[
   return (
     <div className={ac.swiperconatier}>
     <div className={ac.BestDeals}>2024 New Range of ACs from Rs. 22990*
-      <Link to="/commonbestdeals/airconditioners"><button>view all</button></Link>
+      <Link to="/RelianceDigital/commonbestdeals/airconditioners"><button>view all</button></Link>
       </div>
        <CommonCarocial data={data}/>
     </div>

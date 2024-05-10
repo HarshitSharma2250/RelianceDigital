@@ -13,16 +13,16 @@ export const Mobiles = () => {
 <Link className={mobilesublist.subheading} to={`/#`}>smart watches</Link>
 <ul>
   <li>
-    <Link to={`/commonbestdeals/applewatch`}>apple</Link>
+    <Link to={`/RelianceDigital/commonbestdeals/applewatch`}>apple</Link>
   </li>
   <li>
-    <Link to={`/commonbestdeals/#`}>samsung</Link>
+    <Link to={`/RelianceDigital/commonbestdeals/#`}>samsung</Link>
   </li>
   <li>
-    <Link to={`/commonbestdeals/#`}>Noise</Link>
+    <Link to={`/RelianceDigital/commonbestdeals/#`}>Noise</Link>
   </li>
   <li>
-    <Link to={`/commonbestdeals/#`}>Boat</Link>
+    <Link to={`/RelianceDigital/commonbestdeals/#`}>Boat</Link>
   </li>
 </ul>
 </li>
@@ -39,14 +39,14 @@ export const Mobiles = () => {
       <Link>mobile grip & stands</Link>
       </li>
       <li>
-      <Link to={`/commonbestdeals/storage`}>storage</Link>
+      <Link to={`/RelianceDigital/commonbestdeals/storage`}>storage</Link>
       </li>
   </ul>
 </li>
       </ul>
 <ul>
 <li>
-  <Link className={mobilesublist.subheading} to="/commonbestdeals/audio accessories">head phones & headsets</Link>
+  <Link className={mobilesublist.subheading} to="/RelianceDigital/commonbestdeals/audio accessories">head phones & headsets</Link>
 </li>
 <li>
   <Link className={mobilesublist.subheading} to="/#">tablets & eRaders</Link>
